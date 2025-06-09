@@ -32,7 +32,7 @@ const ContactSection = () => {
           <CardHeader>
             <CardTitle className="text-4xl">Contact Form</CardTitle>
             <CardDescription>
-              Please contact me directly at{" "}
+              Coontactame escribiendome al {" "}
               <a
                 target="_blank"
                 href={`mailto:${config.email}`}
@@ -40,7 +40,7 @@ const ContactSection = () => {
               >
                 {config.email.replace(/@/g, "(at)")}
               </a>{" "}
-              or drop your info here.
+              o coloca tu informacion aqui
             </CardDescription>
           </CardHeader>
           <CardContent>

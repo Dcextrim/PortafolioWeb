@@ -36,8 +36,8 @@ const ContactForm = () => {
       const data = await res.json();
       if (data.error) throw new Error(data.error);
       toast({
-        title: "Thank you!",
-        description: "I'll get back to you as soon as possible.",
+        title: "Gracias",
+        description: "Tu mensaje ha sido enviado correctamente.",
         variant: "default",
         className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
       });
@@ -52,7 +52,7 @@ const ContactForm = () => {
     } catch (err) {
       toast({
         title: "Error",
-        description: "Something went wrong! Please check the fields.",
+        description: "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
         className: cn(
           "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
         ),
@@ -65,10 +65,10 @@ const ContactForm = () => {
     <form className="min-w-7xl mx-auto sm:mt-4" onSubmit={handleSubmit}>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
-          <Label htmlFor="fullname">Full name</Label>
+          <Label htmlFor="fullname">Nombre Completo</Label>
           <Input
             id="fullname"
-            placeholder="Your Name"
+            placeholder="Tu nombre"
             type="text"
             required
             value={fullName}
@@ -76,10 +76,10 @@ const ContactForm = () => {
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email Address</Label>
+          <Label htmlFor="email">Correo Electronico</Label>
           <Input
             id="email"
-            placeholder="you@example.com"
+            placeholder="tu@correo.com"
             type="email"
             required
             value={email}
@@ -88,16 +88,16 @@ const ContactForm = () => {
         </LabelInputContainer>
       </div>
       <div className="grid w-full gap-1.5 mb-4">
-        <Label htmlFor="content">Your Message</Label>
+        <Label htmlFor="content">Tu mensaje</Label>
         <Textarea
-          placeholder="Tell me about about your project,"
+          placeholder="Escribe tu mensaje aqui..."
           id="content"
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         <p className="text-sm text-muted-foreground">
-          I&apos;ll never share your data with anyone else. Pinky promise!
+          Tu mensaje sera enviado a mi correo electronico y lo recibire en mi bandeja de entrada.
         </p>
       </div>
       <Button
@@ -108,11 +108,11 @@ const ContactForm = () => {
         {loading ? (
           <div className="flex items-center justify-center">
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            <p>Please wait</p>
+            <p>Porfavor espera</p>
           </div>
         ) : (
           <div className="flex items-center justify-center">
-            Send Message <ChevronRight className="w-4 h-4 ml-4" />
+            Enviar mensaje <ChevronRight className="w-4 h-4 ml-4" />
           </div>
         )}
         <BottomGradient />
