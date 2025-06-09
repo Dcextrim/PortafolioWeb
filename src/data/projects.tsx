@@ -306,8 +306,8 @@ const projects: Project[] = [
           <TypographyH3 className="my-4 mt-8">Reglas del display</TypographyH3>
           <ul className="font-mono list-disc pl-5">
             <li>Máximo 9 caracteres visibles en pantalla.</li>
-            <li>No se muestran números negativos (se muestra "ERROR").</li>
-            <li>No se muestran resultados mayores a 999999999 (se muestra "ERROR").</li>
+            <li>No se muestran números negativos (se muestra ERROR).</li>
+            <li>No se muestran resultados mayores a 999999999 (se muestra ERROR).</li>
           </ul>
 
           <TypographyH3 className="my-4 mt-8">Evaluación</TypographyH3>
@@ -319,7 +319,7 @@ const projects: Project[] = [
             <li>(5 pts) Punto decimal funcional.</li>
             <li>(10 pts) Operación de división.</li>
             <li>(5 pts) Operación de módulo.</li>
-            <li>(5 pts) Botón "+/-".</li>
+            <li>(5 pts) Botón +/-.</li>
             <li>(10 pts) Uso de un custom hook para la lógica.</li>
             <li>(20 pts) Cada componente con menos de 20 líneas.</li>
             <li>(5 pts) Title y favicon personalizados.</li>
