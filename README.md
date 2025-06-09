@@ -44,8 +44,8 @@ El portafolio muestra varios proyectos:
 
 El portafolio demuestra competencia en varias tecnologías incluyendo:
 
-- Frontend: JavaScript, TypeScript, React, Next.js, TailwindCSS
-- Backend: Node.js, Express, PostgreSQL, MongoDB
+- Frontend: JavaScript, TypeScript, React, TailwindCSS
+- Backend: Node.js, PostgreSQL
 - DevOps: Git, GitHub, Docker, Linux
 
 ## Primeros Pasos
