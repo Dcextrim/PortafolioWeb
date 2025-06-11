@@ -62,4 +62,6 @@ npm run dev
 
 Visita http://localhost:3000 para ver el sitio.
 
+https://portafolio-web-67gx.vercel.app/
+
 Basado en el Portafolio de Khatri
