@@ -11,8 +11,12 @@ import {
   SiChakraui,
   SiCplusplus,
   SiCsharp,
+  SiCss3,
   SiDocker,
   SiExpress,
+  SiHtml5,
+  SiNumpy,
+  SiOpengl,
   SiFirebase,
   SiJavascript,
   SiMongodb,
@@ -239,7 +243,36 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiDocker />,
   },
-  
+  opengl: {
+    title: "OpenGL",
+    bg: "black",
+    fg: "white",
+    icon: <SiOpengl />,
+  },
+  pygame: {
+    title: "Pygame",
+    bg: "black",
+    fg: "white",
+    icon: <SiPython />,
+  },
+  numpy: {
+    title: "NumPy",
+    bg: "black",
+    fg: "white",
+    icon: <SiNumpy />,
+  },
+  html: {
+    title: "HTML5",
+    bg: "black",
+    fg: "white",
+    icon: <SiHtml5 />,
+  },
+  css: {
+    title: "CSS3",
+    bg: "black",
+    fg: "white",
+    icon: <SiCss3 />,
+  },
 
 };
 export type Project = {
@@ -486,6 +519,191 @@ const projects: Project[] = [
             <li>Javier Linares (231135)</li>
             <li>Gadiel Ocaña (231270)</li>
           </ul>
+        </div>
+      );
+    },
+  },
+
+
+  {
+    id: "opengl-diorama",
+    category: "Computer Graphics",
+    title: "Diorama OpenGL: Bowser en Mario's House",
+    src: "/assets/projects-screenshots/opengl-diorama/preview.png",
+    screenshots: ["preview.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.opengl,
+        PROJECT_SKILLS.pygame,
+      ],
+      backend: [
+        PROJECT_SKILLS.numpy,
+        PROJECT_SKILLS.python,
+      ],
+    },
+    live: "",
+    github: "https://github.com/Dcextrim/CC2018-OpenGl",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Diorama OpenGL: Bowser en Mario&apos;s House
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Diorama 3D interactivo que presenta una escena de Super Mario 64 con
+            múltiples modelos, shaders únicos por modelo, sistema de cámara avanzado,
+            menú de pausa con efectos especiales y música dinámica. Bowser se ha
+            infiltrado en la casa de Mario, acompañado de un POW Block, MIPS el conejo
+            y el icónico logo de Nintendo 64.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <TypographyH3 className="my-4 mt-8">Características Principales</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li>5 modelos 3D con materiales y texturas individuales</li>
+            <li>Shaders únicos asignados a cada modelo (activables/desactivables)</li>
+            <li>Sistema de cámara dual: Modo Orbital y Modo Libre (FPS)</li>
+            <li>Menú de pausa interactivo con blur DOF, logo N64 rotando y fantasmas Boo</li>
+            <li>Música dinámica que cambia entre modo normal y pausa</li>
+            <li>Skybox con environment map</li>
+            <li>Sistema de iluminación ajustable (ambiental y puntual)</li>
+            <li>Post-procesamiento en tiempo real</li>
+            <li>Arquitectura modular con 7 módulos separados</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Modelos y Shaders</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li><strong>Mario&apos;s House</strong> — Base Shader: texturizado con iluminación Lambertiana</li>
+            <li><strong>Bowser</strong> — ASCII Art Shader: estilización procedural a caracteres ASCII</li>
+            <li><strong>POW Block</strong> — Hologram Shader: efecto holográfico con scanlines animadas</li>
+            <li><strong>MIPS (Conejo)</strong> — Assembling Shader: efecto de ensamblaje/construcción animado</li>
+            <li><strong>N64 Logo &amp; Boos</strong> — Dissolve Shader: disolución con ruido procedural y bordes brillantes</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Sistema de Pausa</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li>Presiona ESC para activar el menú de pausa</li>
+            <li>Blur DOF: efecto de desenfoque por profundidad en toda la escena</li>
+            <li>Logo N64 aparece rotando en el centro de la pantalla</li>
+            <li>4 fantasmas Boo aparecen flotando con animación sinusoidal</li>
+            <li>Transición automática de música entre modo normal y pausa</li>
+            <li>Shader dissolve opcional en los Boos (Tecla 1)</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Controles Principales</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li><strong>ESC</strong> — Menú de pausa</li>
+            <li><strong>ESPACIO</strong> — Cambiar enfoque entre modelos</li>
+            <li><strong>C</strong> — Alternar Modo Orbital / Modo Libre</li>
+            <li><strong>Flechas</strong> — Rotar/orbitar cámara</li>
+            <li><strong>R / T</strong> — Zoom in/out</li>
+            <li><strong>7-0</strong> — Seleccionar modelo</li>
+            <li><strong>TAB</strong> — Cambiar efecto de post-procesamiento</li>
+            <li><strong>2</strong> — Toggle shaders personalizados ON/OFF</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Tecnologías</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li><strong>Lenguaje:</strong> Python 3.13</li>
+            <li><strong>Gráficos:</strong> OpenGL (PyOpenGL), GLSL Shaders</li>
+            <li><strong>Motor:</strong> Pygame para ventana y audio</li>
+            <li><strong>Matemáticas:</strong> NumPy, PyGLM</li>
+            <li><strong>Texturas:</strong> Pillow (PIL)</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Video Demostrativo</TypographyH3>
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden my-4">
+            <video
+              className="w-full h-full rounded-lg"
+              src="/assets/projects-screenshots/opengl-diorama/Proyecto3OpenGl_Hecho_con_Clipchamp_3_1_1_1_1_1.mp4"
+              controls
+              playsInline
+              preload="metadata"
+            />
+          </div>
+        </div>
+      );
+    },
+  },
+
+
+  {
+    id: "ema",
+    category: "Fullstack Web App",
+    title: "EMA - Ellie's Music Academy",
+    src: "/assets/projects-screenshots/ema/homepage.png",
+    screenshots: ["homepage.png", "Loginpage.png", "AboutUspage.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.css,
+      ],
+      backend: [
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+    live: "",
+    github: "",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            EMA - Sistema de Gestión Académica Musical
+          </TypographyP>
+          <TypographyP className="font-mono">
+            Sistema integral de gestión académica para Ellie&apos;s Music Academy,
+            una academia musical que ofrece clases grupales de estimulación musical
+            para niños de 2 a 5 años, clases individuales de piano y canto tanto en
+            sede física como a domicilio, con disponibilidad en español e inglés.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <TypographyH3 className="my-4 mt-8">Problema</TypographyH3>
+          <TypographyP className="font-mono">
+            La academia enfrentaba limitaciones por la gestión manual de inscripciones,
+            programación de clases y control de pagos. Esto provocaba conflictos en la
+            asignación de horarios, pérdida de cupos por falta de pagos oportunos e
+            ineficiencias en la organización de clases a domicilio.
+          </TypographyP>
+
+          <TypographyH3 className="my-4 mt-8">Solución</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li>Plataforma digital que centraliza y automatiza inscripciones, pagos, horarios y reservas</li>
+            <li>Calendario académico en tiempo real para estudiantes, padres y maestros</li>
+            <li>Notificaciones y recordatorios automáticos</li>
+            <li>Reportes dinámicos para la administración</li>
+            <li>Planificación de rutas para profesores a domicilio</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Funcionalidades Clave</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li>Gestión de inscripciones y matrículas</li>
+            <li>Control de pagos con validación de cupos</li>
+            <li>Programación de clases sin conflictos de horarios</li>
+            <li>Coordinación de clases a domicilio y en sede</li>
+            <li>Comunicación ágil entre estudiantes, padres y maestros</li>
+            <li>Reportes y estadísticas de la academia</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Tecnologías</TypographyH3>
+          <ul className="font-mono list-disc pl-5">
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Backend:</strong> Node.js, JavaScript</li>
+            <li><strong>Contenedores:</strong> Docker</li>
+          </ul>
+
+          <TypographyH3 className="my-4 mt-8">Capturas de Pantalla</TypographyH3>
+          <SlideShow
+            images={[
+              `${BASE_PATH}/ema/homepage.png`,
+              `${BASE_PATH}/ema/Loginpage.png`,
+              `${BASE_PATH}/ema/AboutUspage.png`,
+            ]}
+          />
         </div>
       );
     },

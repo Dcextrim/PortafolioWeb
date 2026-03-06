@@ -55,8 +55,8 @@ const CONTACT_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "linkedin.com/in/daniel-alejandro-chet-delgado-6a042a2b7",
-    content: "/daniel-alejandro-chet-delgado-6a042a2b7",
+    href: "https://www.linkedin.com/in/daniel-alejandro-chet-delgado/",
+    content: "/daniel-alejandro-chet-delgado",
     icon: <FaLinkedin height={"50px"} />,
   },
   {

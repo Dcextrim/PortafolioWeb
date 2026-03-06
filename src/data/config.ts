@@ -32,7 +32,7 @@ const config = {
   },
   social: {
     twitter: "https://x.com/danielchet87",
-    linkedin: "https://www.linkedin.com/in/daniel-alejandro-chet-delgado-6a042a2b7/",
+    linkedin: "https://www.linkedin.com/in/daniel-alejandro-chet-delgado/",
     instagram: "https://www.instagram.com/danielalejandrochet",
     facebook: "https://www.facebook.com/PopositoMax/",
     github: "https://github.com/Dcextrim",

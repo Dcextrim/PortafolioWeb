@@ -55,8 +55,8 @@ const CONTACT_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "linkedin.com/in/daniel-alejandro-chet-delgado-6a042a2b7",
-    content: "/daniel-alejandro-chet-delgado-6a042a2b7",
+    href: "https://www.linkedin.com/in/daniel-alejandro-chet-delgado/",
+    content: "/daniel-alejandro-chet-delgado",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
@@ -82,81 +82,81 @@ const TOOLS = [
   },
   {
     name: "HTML",
-    content: "Next.js is a React framework for production",
+    content: "Lenguaje de marcado para estructurar páginas web",
     icon: <FaHtml5 size={"50px"} color="#e34c26" />,
     color: "#e34c26",
   },
   {
     name: "CSS",
-    content: "Next.js is a React framework for production",
+    content: "Lenguaje de estilos para diseño visual de páginas web",
     icon: <FaCss3 size={"50px"} color="#563d7c" />,
     color: "#563d7c",
   },
   {
     name: "Nodejs",
-    content: "Next.js is a React framework for production",
+    content: "Entorno de ejecución de JavaScript del lado del servidor",
     icon: <FaNodeJs size={"50px"} color="#6cc24a" />,
     color: "#6cc24a",
   },
   {
     name: "React.js",
-    content: "Next.js is a React framework for production",
+    content: "Librería de JavaScript para interfaces de usuario",
     icon: <FaReact size={"50px"} color="#61dafb" />,
     color: "#61dafb",
   },
   {
     name: "Docker",
-    content: "Next.js is a React framework for production",
+    content: "Plataforma de contenedores para despliegue de aplicaciones",
     icon: <FaDocker size={"50px"} color="#2496ed" />,
     color: "#2496ed",
   },
   {
     name: "NginX",
-    content: "Next.js is a React framework for production",
+    content: "Servidor web y proxy inverso de alto rendimiento",
     icon: <DiNginx size={"50px"} color="#008000" />,
     color: "#008000",
   },
 
   {
     name: "Express.js",
-    content: "Next.js is a React framework for production",
+    content: "Framework minimalista para Node.js",
     icon: <SiExpress size={"50px"} color="#fff" />,
     color: "#000000",
   },
   {
     name: "PostgreSQL",
-    content: "Next.js is a React framework for production",
+    content: "Base de datos relacional de código abierto",
     icon: <DiPostgresql size={"50px"} color="#336791" />,
     color: "#336791",
   },
 
   {
     name: "Tailwind CSS",
-    content: "Next.js is a React framework for production",
+    content: "Framework CSS de utilidades para diseño rápido",
     icon: <RiTailwindCssFill size={"50px"} color="#06b6d4" />,
     color: "#06b6d4",
   },
   {
     name: "Firebase",
-    content: "Next.js is a React framework for production",
+    content: "Plataforma de Google para desarrollo de apps",
     icon: <RiFirebaseFill size={"50px"} color="#FFCA28" />,
     color: "#FFCA28",
   },
   {
     name: "Git",
-    content: "Next.js is a React framework for production",
+    content: "Sistema de control de versiones distribuido",
     icon: <FaGit size={"50px"} color="#f05032" />,
     color: "#f05032",
   },
   {
     name: "GitHub",
-    content: "Next.js is a React framework for production",
+    content: "Plataforma de alojamiento de repositorios Git",
     icon: <FaGithub size={"50px"} color="#fff" />,
     color: "#000000",
   },
   {
     name: "VS Code",
-    content: "Next.js is a React framework for production",
+    content: "Editor de código ligero y extensible",
     icon: <SiVisualstudiocode size={"50px"} color="#007acc" />,
     color: "#007acc",
   },
@@ -164,7 +164,7 @@ const TOOLS = [
 
   {
     name: "NPM",
-    content: "Next.js is a React framework for production",
+    content: "Gestor de paquetes de Node.js",
     icon: <DiNpm size={"50px"} color="#CB3837" />,
     color: "#CB3837",
   },
@@ -172,20 +172,20 @@ const TOOLS = [
 
   {
     name: "Linux",
-    content: "Next.js is a React framework for production",
+    content: "Sistema operativo de código abierto",
     icon: <FaLinux size={"50px"} color="#fff" />,
     color: "#000000",
   },
 
   {
     name: "Terminal",
-    content: "Next.js is a React framework for production",
+    content: "Línea de comandos para gestión del sistema",
     icon: <TbTerminal2 size={"50px"} color="#fff" />,
     color: "#000000",
   },
   {
     name: "AWS",
-    content: "Next.js is a React framework for production",
+    content: "Servicios en la nube de Amazon",
     icon: <FaAws size={"50px"} color="#3f51b5" />,
     color: "#000000",
   },
@@ -201,17 +201,17 @@ function AboutSection() {
       <div className="flex flex-col lg:flex-row gap-5">
         <aside className="w-full md:basis-1/4">
           <div
-            className="p-4 md:p-8 lg:p-10 rounded-2xl border-[.5px] border-zinc-600"
+            className="p-4 md:p-8 lg:p-10 rounded-2xl border-[.5px] border-zinc-600 bg-zinc-900/80"
             style={{
-              backdropFilter: "blur(2px)",
+              backdropFilter: "blur(10px)",
             }}
           >
             <div className="flex flex-row lg:flex-col items-center">
-              <div className="flex justify-center items-center lg:w-full lg:aspect-square bg-zinc-800 rounded-xl lg:mb-5">
+              <div className="flex justify-center items-center lg:w-full bg-zinc-800 rounded-xl lg:mb-5 overflow-hidden">
                 <img
-                  className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] aspect-square  bg-zinc-800"
+                  className="rounded-full p-4 lg:p-10 w-[100px] md:w-[150px] lg:w-[200px] object-cover aspect-square bg-zinc-800"
                   alt="me"
-                  src="/assets/me.jpg"
+                  src="/assets/profilepic.png"
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
@@ -246,8 +246,8 @@ function AboutSection() {
         </aside>
         <main className="basis-3/4 w-[500px]">
           <div
-            className="p-10 border-[.5px] rounded-md border-zinc-600"
-            style={{ backdropFilter: "blur(2px)" }}
+            className="p-10 border-[.5px] rounded-md border-zinc-600 bg-zinc-900/80"
+            style={{ backdropFilter: "blur(10px)" }}
           >
             <h1 className="text-3xl mb-10 lg:md-20">Sobre mi</h1>
             <p className="mb-10 text-roboto">
@@ -281,22 +281,20 @@ function AboutSection() {
                     easing: "cubic-bezier(0.25, 1, 0.5, 1)",
                     arrows: false,
                   }}
-                  aria-label="My Favorite Images"
+                  aria-label="Herramientas"
                 >
-                  {TOOLS.reverse().map((tool) => (
+                  {[...TOOLS].reverse().map((tool) => (
                     <SplideSlide key={tool.name}>
-                      <div
-                        key={tool.name}
-                        className="w-fit p-2 border-[.5px] border-zinc-600 rounded-md"
-                      >
+                      <div className="flex flex-col items-center gap-1 p-2 border-[.5px] border-zinc-600 rounded-md mx-1">
                         {tool.icon}
+                        <span className="text-xs text-zinc-400 text-center">{tool.name}</span>
                       </div>
                     </SplideSlide>
                   ))}
                 </Splide>
               )}
             </div>
-            { <div className="">
+            <div className="">
               <Splide
                 options={{
                   type: "loop",
@@ -310,20 +308,18 @@ function AboutSection() {
                   easing: "cubic-bezier(0.25, 1, 0.5, 1)",
                   arrows: false,
                 }}
-                aria-label="My Favorite Images"
+                aria-label="Herramientas 2"
               >
                 {TOOLS.map((tool) => (
                   <SplideSlide key={tool.name}>
-                    <div
-                      key={tool.name}
-                      className="w-fit p-2 border-[.5px] border-zinc-600 rounded-md"
-                    >
+                    <div className="flex flex-col items-center gap-1 p-2 border-[.5px] border-zinc-600 rounded-md mx-1">
                       {tool.icon}
+                      <span className="text-xs text-zinc-400 text-center">{tool.name}</span>
                     </div>
                   </SplideSlide>
                 ))}
               </Splide>
-            </div>}
+            </div>
           </div>
         </main>
       </div>
